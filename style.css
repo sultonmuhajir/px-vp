@@ -1,75 +1,90 @@
-/* Html */
+/* => Html */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    background-image: url(img/bg.png);
-    background-size: cover;
-    font-family: 'Montserrat', sans-serif;
-    opacity: .95;
+	background-image: url(img/bg.png);
+	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	opacity: .95;
 }
 
 
-/* Header */
+
+/* => Header */
 .header {
-    border-radius: 7px 7px 0 0;
-    margin-top: 40px;
-    margin-bottom: -5px;
-    background-color: #0D4459;
-    position: relative;
-    z-index: 1;
+	border-radius: 7px 7px 0 0;
+	margin-top: 40px;
+	margin-bottom: -5px;
+	background-color: #0D4459;
+	position: relative;
+	z-index: 1;
 }
 
 
-/* Content */
+
+/* => Content */
 .box {
-    margin: 0 -15px;
-    background-color: #7eaeb3;
+	margin: 0 -15px;
+	background-color: #7eaeb3;
 }
 
 .konten {
-    margin: 17px auto;
-    border: none;
+	margin: 17px auto;
+	border: 1px solid #444;
 }
 
 .konten .card-header {
-    background-color: #AEBF8E;
+	background-color: #AEBF8E;
 }
 
 .konten .card-body {
-    background-color: #D1DBA9;
+	background-color: #D1DBA9;
 }
 
 .card img {
-    display: block;
-    margin: 10px auto 20px;
+	display: block;
+	margin: 10px auto 20px;
 }
 
 .card .card-header b {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 .card .inputbox {
-    position: relative;
+	position: relative;
 }
 
 .card input {
-    width: 45%;
-    margin-bottom: 30px;
-    border: none;
-    outline: none;
+	width: 45%;
+	margin-bottom: 30px;
+	border: 1px solid #555;
+	border-radius: 3px;
+	outline: none;
+	font-size: .9rem;
+	padding: 3px 5px;
 }
 
 
-/* Footer */
+
+/* => Footer */
 footer .row {
-    border-radius: 0 0 7px 7px;
-    margin-bottom: 50px;
-    background-color: #0D4459;
-    position: relative;
-    z-index: 1;
-    top: -4px;
+	border-radius: 0 0 7px 7px;
+	margin-bottom: 50px;
+	background-color: #0D4459;
+	position: relative;
+	z-index: 1;
+	top: -4px;
 }
 
 footer p {
-    font-size: .8rem;
+	font-size: .8rem;
+}
+
+
+
+/* => Media Queries */
+@media (max-width: 580px) {
+	.container {
+		width: 95%;
+	}
 }
