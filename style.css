@@ -1,10 +1,10 @@
 /* => Html */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
 	background-image: url(img/bg.jpeg);
 	background-size: cover;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	opacity: .95;
 }
 
