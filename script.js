@@ -17,18 +17,23 @@ const result = (id, hsl) => {
 }
 
 
-px.addEventListener("keyup", function () {
-	const px1 = parseFloat(px.value);
-	const temp1 = 100 * px1 / window.innerWidth;
-	const hsl1 = temp1.toFixed(2);
-	result(vp, hsl1);
-});
-vp.addEventListener("keyup", function () {
-	const vw = parseFloat(vp.value);
-	const temp2 = window.innerWidth * vw / 100;
-	const hsl2 = temp2.toFixed(2);
-	result(px, hsl2);
-});
+const pxVw = () => {
+	px.addEventListener("keyup", function () {
+		const px1 = parseFloat(px.value);
+		const temp1 = 100 * px1 / window.innerWidth;
+		const hsl1 = temp1.toFixed(2);
+		result(vp, hsl1);
+	});
+	vp.addEventListener("keyup", function () {
+		const vw = parseFloat(vp.value);
+		const temp2 = window.innerWidth * vw / 100;
+		const hsl2 = temp2.toFixed(2);
+		result(px, hsl2);
+	});
+}
+
+
+pxVw();
 
 
 sell.addEventListener("change", function () {
@@ -40,18 +45,7 @@ sell.addEventListener("change", function () {
 		imVh.style.display = "none";
 		imVw.style.display = "initial";
 		label.innerHTML = "Vw";
-		px.addEventListener("keyup", function () {
-			const px1 = parseFloat(px.value);
-			const temp1 = 100 * px1 / window.innerWidth;
-			const hsl1 = temp1.toFixed(2);
-			result(vp, hsl1);
-		});
-		vp.addEventListener("keyup", function () {
-			const vw = parseFloat(vp.value);
-			const temp2 = window.innerWidth * vw / 100;
-			const hsl2 = temp2.toFixed(2);
-			result(px, hsl2);
-		});
+		pxVw();
 	} else {
 		imVw.style.display = "none";
 		imVh.style.display = "initial";
